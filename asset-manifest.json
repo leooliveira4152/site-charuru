@@ -1,15 +1,15 @@
 {
   "files": {
     "main.css": "/site-charuru/static/css/main.f855e6bc.css",
-    "main.js": "/site-charuru/static/js/main.e4ccb65a.js",
+    "main.js": "/site-charuru/static/js/main.4aa36cc1.js",
     "static/js/430.dadee5cb.chunk.js": "/site-charuru/static/js/430.dadee5cb.chunk.js",
     "index.html": "/site-charuru/index.html",
     "main.f855e6bc.css.map": "/site-charuru/static/css/main.f855e6bc.css.map",
-    "main.e4ccb65a.js.map": "/site-charuru/static/js/main.e4ccb65a.js.map",
+    "main.4aa36cc1.js.map": "/site-charuru/static/js/main.4aa36cc1.js.map",
     "430.dadee5cb.chunk.js.map": "/site-charuru/static/js/430.dadee5cb.chunk.js.map"
   },
   "entrypoints": [
     "static/css/main.f855e6bc.css",
-    "static/js/main.e4ccb65a.js"
+    "static/js/main.4aa36cc1.js"
   ]
 }
