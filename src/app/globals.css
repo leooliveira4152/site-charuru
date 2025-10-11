@@ -1,3 +1,29 @@
+@font-face {
+  font-family: "Queering";
+  src: url("/fonts/Queering-Regular.woff2") format("woff2"),
+    url("/fonts/Queering-Regular.woff") format("woff");
+  font-weight: 400;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Queering";
+  src: url("/fonts/Queering-Bold.woff2") format("woff2"),
+    url("/fonts/Queering-Bold.woff") format("woff");
+  font-weight: 700;
+  font-style: normal;
+  font-display: swap;
+}
+
+@font-face {
+  font-family: "Queering";
+  src: url("/fonts/Queering-Heavy.woff2") format("woff2"),
+    url("/fonts/Queering-Heavy.woff") format("woff");
+  font-weight: 900;
+  font-style: normal;
+  font-display: swap;
+}
 @import "tailwindcss";
 
 :root {
@@ -14,7 +40,7 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
+    --background: #0c0c11;
     --foreground: #ededed;
   }
 }
@@ -22,5 +48,7 @@
 body {
   background: var(--background);
   color: var(--foreground);
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: "Queering", Arial, Helvetica, sans-serif;
+  height: 100vh;
+  width: 100vw;
 }
