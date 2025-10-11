@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/site-charuru/static/css/main.502e6677.css",
-    "main.js": "/site-charuru/static/js/main.4aa36cc1.js",
+    "main.css": "/site-charuru/static/css/main.c364a1c8.css",
+    "main.js": "/site-charuru/static/js/main.6d625645.js",
     "static/js/430.dadee5cb.chunk.js": "/site-charuru/static/js/430.dadee5cb.chunk.js",
     "static/media/Queering-Bold.woff": "/site-charuru/static/media/Queering-Bold.fa1a781961db20e98113.woff",
     "static/media/Queering-Heavy.woff": "/site-charuru/static/media/Queering-Heavy.3d0484fe4c36b0b6de5c.woff",
@@ -10,12 +10,12 @@
     "static/media/Queering-Regular.woff2": "/site-charuru/static/media/Queering-Regular.50de10ea3ab5cf36df6c.woff2",
     "static/media/Queering-Heavy.woff2": "/site-charuru/static/media/Queering-Heavy.3eb32d5184ce30bf23c0.woff2",
     "index.html": "/site-charuru/index.html",
-    "main.502e6677.css.map": "/site-charuru/static/css/main.502e6677.css.map",
-    "main.4aa36cc1.js.map": "/site-charuru/static/js/main.4aa36cc1.js.map",
+    "main.c364a1c8.css.map": "/site-charuru/static/css/main.c364a1c8.css.map",
+    "main.6d625645.js.map": "/site-charuru/static/js/main.6d625645.js.map",
     "430.dadee5cb.chunk.js.map": "/site-charuru/static/js/430.dadee5cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.502e6677.css",
-    "static/js/main.4aa36cc1.js"
+    "static/css/main.c364a1c8.css",
+    "static/js/main.6d625645.js"
   ]
 }
