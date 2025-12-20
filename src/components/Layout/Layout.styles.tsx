@@ -4,7 +4,7 @@ import { Button, IconButton, styled, Typography } from "@mui/material";
 // When changing something check for the consistency
 
 export const HEADER_CONTENT_HEIGHT = 59;
-const BACKGROUND_IMAGE_URL = 'url("/assets/about-bg.png")';
+const BACKGROUND_IMAGE_URL = `url("${process.env.PUBLIC_URL}/assets/about-bg.png")`;
 type OpenMenuProps = { $menuIsOpen: boolean };
 
 export const Root = styled("div")<OpenMenuProps>(({ theme, $menuIsOpen }) => ({
