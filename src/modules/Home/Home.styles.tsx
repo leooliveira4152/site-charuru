@@ -1,4 +1,5 @@
-import { styled } from "@mui/material";
+import { styled, Typography } from "@mui/material";
+import { HOME_ICON_SIZE } from "./assets/HomeIcon";
 
 export const Root = styled("div")({
   display: "flex",
@@ -22,13 +23,23 @@ export const MainContainer = styled("div")({
 export const TitleContainer = styled("div")({
   display: "flex",
   justifyContent: "center",
+  alignItems: "center",
 
   border: "9px solid #fff",
   borderRadius: 8,
   boxSizing: "border-box",
 
-  height: 122, // Should match HomeIcon height
+  height: HOME_ICON_SIZE,
   width: 240,
+});
+
+export const TitleText = styled(Typography)({
+  fontFamily: "Queering",
+  fontWeight: 700,
+  lineHeight: "normal",
+  fontSize: 90,
+  paddingTop: 6,
+  WebkitTextStroke: "1px #fff",
 });
 
 export const FooterContainer = styled("div")({

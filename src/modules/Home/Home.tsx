@@ -1,13 +1,16 @@
-import { Button, Typography } from "@mui/material";
+import { Button } from "@mui/material";
 import { HomeIcon } from "./assets/HomeIcon";
 import {
   FooterContainer,
   MainContainer,
   Root,
   TitleContainer,
+  TitleText,
 } from "./Home.styles";
 import { useNavigate } from "react-router-dom";
 import { AppRoutes } from "../../routes/routes";
+
+// TODO - Add eslint
 
 export const Home = () => {
   const navigate = useNavigate();
@@ -18,14 +21,7 @@ export const Home = () => {
       <MainContainer>
         <HomeIcon />
         <TitleContainer>
-          <Typography
-            fontFamily="Queering"
-            fontWeight="700"
-            lineHeight="normal"
-            variant="h1"
-          >
-            SEIGI
-          </Typography>
+          <TitleText>SEIGI</TitleText>
         </TitleContainer>
       </MainContainer>
       <FooterContainer>

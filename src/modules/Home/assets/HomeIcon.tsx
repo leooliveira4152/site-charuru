@@ -1,8 +1,10 @@
+export const HOME_ICON_SIZE = 122;
+
 export const HomeIcon = () => {
   return (
     <svg
-      width="123"
-      height="122"
+      width={HOME_ICON_SIZE}
+      height={HOME_ICON_SIZE}
       viewBox="0 0 123 122"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

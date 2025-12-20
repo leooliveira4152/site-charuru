@@ -1,9 +1,5 @@
-import { Box } from "@mui/material";
+import { Layout } from "../../components/Layout/Layout";
 
 export const About = () => {
-  return (
-    <Box bgcolor="lightblue" height="100%">
-      About Page
-    </Box>
-  );
+  return <Layout>About</Layout>;
 };
