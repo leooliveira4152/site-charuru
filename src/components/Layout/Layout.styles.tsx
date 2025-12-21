@@ -4,6 +4,7 @@ import { Button, IconButton, styled, Typography } from "@mui/material";
 // When changing something check for the consistency
 
 export const HEADER_CONTENT_HEIGHT = 59;
+export const HEADER_HORIZONTAL_PADDING = 90;
 const BACKGROUND_IMAGE_URL = `url("${process.env.PUBLIC_URL}/assets/about-bg.png")`;
 type OpenMenuProps = { $menuIsOpen: boolean };
 
@@ -37,8 +38,8 @@ export const Header = styled("div")<OpenMenuProps>(
 
     paddingTop: 66,
     paddingBottom: 55,
-    paddingLeft: 90,
-    paddingRight: 90,
+    paddingLeft: HEADER_HORIZONTAL_PADDING,
+    paddingRight: HEADER_HORIZONTAL_PADDING,
 
     ...($menuIsOpen && {
       backgroundColor: "#15151F",
@@ -78,7 +79,6 @@ export const LogoText = styled("div")({
   fontWeight: 700,
   lineHeight: "normal",
   fontSize: 40,
-  WebkitTextStroke: "1px #fff",
   marginTop: 3,
   letterSpacing: 1,
 });

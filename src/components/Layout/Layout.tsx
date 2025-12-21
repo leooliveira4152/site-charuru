@@ -12,6 +12,7 @@ import {
 import { HorseIcon } from "./assets/HorseIcon";
 import { MenuIcon } from "./assets/MenuIcon";
 import { CloseIcon } from "./assets/CloseIcon";
+import { Menu } from "./components/Menu/Menu";
 
 type LayoutProps = PropsWithChildren<{}>;
 export const Layout = ({ children }: LayoutProps) => {
@@ -34,7 +35,7 @@ export const Layout = ({ children }: LayoutProps) => {
         </MenuButton>
       </Header>
 
-      {menuIsOpen ? <div>Menu is Open</div> : children}
+      {menuIsOpen ? <Menu /> : children}
     </Root>
   );
 };

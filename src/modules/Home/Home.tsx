@@ -1,5 +1,5 @@
 import { Button } from "@mui/material";
-import { HomeIcon } from "./assets/HomeIcon";
+import { HomeIcon } from "../../assets/HomeIcon";
 import {
   FooterContainer,
   MainContainer,
@@ -14,7 +14,6 @@ import { AppRoutes } from "../../routes/routes";
 
 export const Home = () => {
   const navigate = useNavigate();
-  const redirectToAbout = () => navigate(AppRoutes.ABOUT);
 
   return (
     <Root>
@@ -25,11 +24,15 @@ export const Home = () => {
         </TitleContainer>
       </MainContainer>
       <FooterContainer>
-        <Button variant="outlined" onClick={redirectToAbout}>
-          Page #1
+        <Button variant="outlined" onClick={() => navigate(AppRoutes.ABOUT)}>
+          About
         </Button>
-        <Button variant="outlined">Page #2</Button>
-        <Button variant="outlined">Page #3</Button>
+        <Button variant="outlined" onClick={() => navigate(AppRoutes.WORK)}>
+          Work
+        </Button>
+        <Button variant="outlined" onClick={() => navigate(AppRoutes.CONTACT)}>
+          Contact
+        </Button>
       </FooterContainer>
     </Root>
   );

@@ -1,5 +1,5 @@
 import { styled, Typography } from "@mui/material";
-import { HOME_ICON_SIZE } from "./assets/HomeIcon";
+import { HOME_ICON_SIZE } from "../../assets/HomeIcon";
 
 export const Root = styled("div")({
   display: "flex",

@@ -1,7 +1,7 @@
 import { Box } from "@mui/material";
 import { Layout } from "../../components/Layout/Layout";
 
-export const About = () => {
+export const Contact = () => {
   return (
     <Layout>
       <Box
@@ -11,7 +11,7 @@ export const About = () => {
         height="100%"
         fontSize={200}
       >
-        About Module
+        Contact Module
       </Box>
     </Layout>
   );
