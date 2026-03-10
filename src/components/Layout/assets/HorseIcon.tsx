@@ -1,8 +1,10 @@
+const SIZE_MULTIPLIER = 0.75
+
 export const HorseIcon = () => {
   return (
     <svg
-      width="28"
-      height="35"
+      width={28 * SIZE_MULTIPLIER}
+      height={35 * SIZE_MULTIPLIER}
       viewBox="0 0 28 35"
       fill="none"
       xmlns="http://www.w3.org/2000/svg"

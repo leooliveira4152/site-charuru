@@ -1,10 +1,10 @@
-import { Button, IconButton, styled, Typography } from "@mui/material";
+import { IconButton, styled, Typography } from "@mui/material";
 
 // Some heights and widths are hardcoded here for simplicity (we don't need to make a scalable system for this project)
 // When changing something check for the consistency
 
-export const HEADER_CONTENT_HEIGHT = 59;
-export const HEADER_HORIZONTAL_PADDING = 90;
+export const HEADER_CONTENT_HEIGHT = 42;
+export const HEADER_HORIZONTAL_PADDING = 28;
 const BACKGROUND_IMAGE_URL = `url("${process.env.PUBLIC_URL}/assets/about-bg.png")`;
 type OpenMenuProps = { $menuIsOpen: boolean };
 
@@ -18,6 +18,8 @@ export const Root = styled("div")<OpenMenuProps>(({ theme, $menuIsOpen }) => ({
 
   height: "100%",
   boxSizing: "border-box",
+
+  minWidth: 1280, // TODO - Make it responsive later
 
   ...($menuIsOpen
     ? {
@@ -34,17 +36,17 @@ export const Header = styled("div")<OpenMenuProps>(
     display: "flex",
     flexDirection: "row",
     alignItems: "center",
-    gap: 24,
+    gap: 16,
 
-    paddingTop: 66,
-    paddingBottom: 55,
+    paddingTop: 54,
+    paddingBottom: 54,
     paddingLeft: HEADER_HORIZONTAL_PADDING,
     paddingRight: HEADER_HORIZONTAL_PADDING,
 
     ...($menuIsOpen && {
       backgroundColor: "#15151F",
     }),
-  })
+  }),
 );
 
 // Logo container styles
@@ -57,8 +59,8 @@ export const LogoContainer = styled("div")(({ theme }) => ({
   alignItems: "center",
 
   width: "fit-content",
-  paddingLeft: 28,
-  paddingRight: 28,
+  paddingLeft: 20,
+  paddingRight: 20,
   position: "relative",
 
   // Outer rounded border using pseudo-element
@@ -69,7 +71,7 @@ export const LogoContainer = styled("div")(({ theme }) => ({
     left: LOGO_BORDER_SPACING,
     right: LOGO_BORDER_SPACING,
     bottom: LOGO_BORDER_SPACING,
-    border: "4px solid #fff",
+    border: "3px solid #fff",
     borderRadius: 4,
   },
 }));
@@ -77,8 +79,8 @@ export const LogoContainer = styled("div")(({ theme }) => ({
 export const LogoText = styled("div")({
   fontFamily: "Queering",
   fontWeight: 700,
-  lineHeight: "normal",
-  fontSize: 40,
+  lineHeight: "100%",
+  fontSize: 32,
   letterSpacing: 1,
 });
 
@@ -90,7 +92,7 @@ export const HorseContainer = styled("div")({
   alignItems: "center",
 
   backgroundColor: "#fff",
-  borderRadius: 4,
+  borderRadius: 2.5,
   height: HEADER_CONTENT_HEIGHT,
   width: HEADER_CONTENT_HEIGHT,
 });
@@ -105,7 +107,7 @@ export const TitleContainer = styled("div")(({ theme }) => ({
 export const Title = styled(Typography)(({ theme }) => ({
   fontFamily: "Queering",
   fontWeight: 700,
-  fontSize: 80,
+  fontSize: 60,
   lineHeight: HEADER_CONTENT_HEIGHT + "px",
   color: "#FFFFFF",
 }));
