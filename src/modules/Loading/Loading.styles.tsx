@@ -17,7 +17,7 @@ export const MainContainer = styled("div")({
   flex: 1,
   flexDirection: "row",
   alignItems: "center",
-  gap: 36,
+  gap: 16,
 });
 
 export const TitleContainer = styled("div")({
@@ -25,19 +25,19 @@ export const TitleContainer = styled("div")({
   justifyContent: "center",
   alignItems: "center",
 
-  border: "9px solid #fff",
-  borderRadius: 8,
+  border: "4.5px solid #fff",
+  borderRadius: 4,
   boxSizing: "border-box",
 
   height: HOME_ICON_SIZE,
-  width: 240,
+  width: 140,
 });
 
 export const TitleText = styled(Typography)({
   fontFamily: "Queering",
   fontWeight: 700,
   lineHeight: "normal",
-  fontSize: 90,
+  fontSize: 48,
 });
 
 export const FooterContainer = styled("div")({

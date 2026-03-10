@@ -1,4 +1,4 @@
-export const HOME_ICON_SIZE = 122;
+export const HOME_ICON_SIZE = 63;
 
 export const HomeIcon = () => {
   return (
