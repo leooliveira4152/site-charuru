@@ -6,7 +6,7 @@ import { IconButton, styled, Typography } from "@mui/material";
 export const HEADER_CONTENT_HEIGHT = 42;
 export const HEADER_HORIZONTAL_PADDING = 28;
 
-export type BackgroundImageType = "home" | "about" | "general";
+export type BackgroundImageType = "home" | "about" | "contact" | "general";
 type OpenMenuProps = {
   $backgroundImage: BackgroundImageType;
   $menuIsOpen: boolean;
@@ -15,6 +15,7 @@ type OpenMenuProps = {
 const backgroundImages: Record<BackgroundImageType, string> = {
   home: `url("${process.env.PUBLIC_URL}/assets/home-bg.png")`,
   about: `url("${process.env.PUBLIC_URL}/assets/about-bg.jpg")`,
+  contact: `url("${process.env.PUBLIC_URL}/assets/contact-bg.png")`,
   general: `url("${process.env.PUBLIC_URL}/assets/general-bg.png")`,
 };
 
@@ -30,14 +31,19 @@ export const Root = styled("div")<OpenMenuProps>(
     boxSizing: "border-box",
 
     minWidth: 1280, // TODO - Make it responsive later
+    backgroundImage: backgroundImages[$backgroundImage],
 
-    ...($menuIsOpen
-      ? {
-          backgroundImage: backgroundImages[$backgroundImage],
-          backgroundColor: "rgba(21, 21, 31, 1)",
-          backgroundBlendMode: "overlay",
-        }
-      : { backgroundImage: backgroundImages[$backgroundImage] }),
+    ...($menuIsOpen && {
+      backgroundColor: "rgba(21, 21, 31, 1)",
+      backgroundBlendMode: "overlay",
+    }),
+
+    ...($backgroundImage === "contact" && {
+      backgroundSize: "780px", // TODO - Placeholder size
+      backgroundRepeat: "no-repeat",
+      backgroundColor: "black",
+      backgroundPosition: "bottom right",
+    }),
   }),
 );
 

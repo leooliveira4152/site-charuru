@@ -32,19 +32,17 @@ export const About = () => {
           <Logo>SEIGI</Logo>
         </TextSection>
         <TextSection>
-          {/* Width is forced so line-breaking always have a consistent layout */}
-          <Typography
-            fontFamily="Inter"
-            fontSize={16}
-            fontWeight={400}
-            maxWidth={280}
-          >
-            I work with motion design and audiovisual content, combining
-            creativity and technique to bring ideas to life.
+          <Typography fontFamily="Inter" fontSize={16} fontWeight={400}>
+            I work with motion design and
+            <br />
+            audiovisual content, combining
+            <br />
+            creativity and technique to bring
+            <br /> ideas to life.
           </Typography>
         </TextSection>
         <TextSection>
-          {/* Again, width is forced so line-breaking always have a consistent layout */}
+          {/* Width is forced so line-breaking always have a consistent layout */}
           <Box
             display="flex"
             flexDirection="row"
