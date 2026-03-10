@@ -1,21 +1,21 @@
 {
   "files": {
-    "main.css": "/site-charuru/static/css/main.c364a1c8.css",
-    "main.js": "/site-charuru/static/js/main.5ea940df.js",
+    "main.css": "/site-charuru/static/css/main.d8479183.css",
+    "main.js": "/site-charuru/static/js/main.739c45fb.js",
     "static/js/430.dadee5cb.chunk.js": "/site-charuru/static/js/430.dadee5cb.chunk.js",
-    "static/media/Queering-Bold.woff": "/site-charuru/static/media/Queering-Bold.fa1a781961db20e98113.woff",
-    "static/media/Queering-Heavy.woff": "/site-charuru/static/media/Queering-Heavy.3d0484fe4c36b0b6de5c.woff",
-    "static/media/Queering-Regular.woff": "/site-charuru/static/media/Queering-Regular.b6292b06d9ebbc95fd0a.woff",
-    "static/media/Queering-Bold.woff2": "/site-charuru/static/media/Queering-Bold.2c35bdffdf61bfab0bd0.woff2",
-    "static/media/Queering-Regular.woff2": "/site-charuru/static/media/Queering-Regular.50de10ea3ab5cf36df6c.woff2",
-    "static/media/Queering-Heavy.woff2": "/site-charuru/static/media/Queering-Heavy.3eb32d5184ce30bf23c0.woff2",
+    "static/media/Queering-Bold.woff": "/site-charuru/static/media/Queering-Bold.32ef6bc197cedca3dff5.woff",
+    "static/media/Queering-Regular.woff": "/site-charuru/static/media/Queering-Regular.8f930dff2b0278837c04.woff",
+    "static/media/Queering-Heavy.woff": "/site-charuru/static/media/Queering-Heavy.bf8e8cb763151eb00191.woff",
+    "static/media/Queering-Bold.woff2": "/site-charuru/static/media/Queering-Bold.a99d0bfe9cbbd241f262.woff2",
+    "static/media/Queering-Regular.woff2": "/site-charuru/static/media/Queering-Regular.f6d69857adeafd391587.woff2",
+    "static/media/Queering-Heavy.woff2": "/site-charuru/static/media/Queering-Heavy.7f5fa8a74676d5113834.woff2",
     "index.html": "/site-charuru/index.html",
-    "main.c364a1c8.css.map": "/site-charuru/static/css/main.c364a1c8.css.map",
-    "main.5ea940df.js.map": "/site-charuru/static/js/main.5ea940df.js.map",
+    "main.d8479183.css.map": "/site-charuru/static/css/main.d8479183.css.map",
+    "main.739c45fb.js.map": "/site-charuru/static/js/main.739c45fb.js.map",
     "430.dadee5cb.chunk.js.map": "/site-charuru/static/js/430.dadee5cb.chunk.js.map"
   },
   "entrypoints": [
-    "static/css/main.c364a1c8.css",
-    "static/js/main.5ea940df.js"
+    "static/css/main.d8479183.css",
+    "static/js/main.739c45fb.js"
   ]
 }
