@@ -5,49 +5,52 @@ import { IconButton, styled, Typography } from "@mui/material";
 
 export const HEADER_CONTENT_HEIGHT = 42;
 export const HEADER_HORIZONTAL_PADDING = 28;
-const BACKGROUND_IMAGE_URL = `url("${process.env.PUBLIC_URL}/assets/about-bg.png")`;
-type OpenMenuProps = { $menuIsOpen: boolean };
 
-export const Root = styled("div")<OpenMenuProps>(({ theme, $menuIsOpen }) => ({
-  display: "flex",
-  flexDirection: "column",
-  justifyContent: "space-between",
+export type BackgroundImageType = "home" | "about" | "general";
+type OpenMenuProps = {
+  $backgroundImage: BackgroundImageType;
+  $menuIsOpen: boolean;
+};
 
-  backgroundSize: "cover",
-  backgroundPosition: "center",
+const backgroundImages: Record<BackgroundImageType, string> = {
+  home: `url("${process.env.PUBLIC_URL}/assets/home-bg.png")`,
+  about: `url("${process.env.PUBLIC_URL}/assets/about-bg.jpg")`,
+  general: `url("${process.env.PUBLIC_URL}/assets/general-bg.png")`,
+};
 
-  height: "100%",
-  boxSizing: "border-box",
-
-  minWidth: 1280, // TODO - Make it responsive later
-
-  ...($menuIsOpen
-    ? {
-        // TODO - Filter is not perfect, improve it later
-        backgroundImage:
-          "linear-gradient(rgba(0, 32, 96, 0.5), rgba(0, 32, 96, 0.5)), " +
-          BACKGROUND_IMAGE_URL,
-      }
-    : { backgroundImage: BACKGROUND_IMAGE_URL }),
-}));
-
-export const Header = styled("div")<OpenMenuProps>(
-  ({ theme, $menuIsOpen }) => ({
+export const Root = styled("div")<OpenMenuProps>(
+  ({ $backgroundImage, $menuIsOpen }) => ({
     display: "flex",
-    flexDirection: "row",
-    alignItems: "center",
-    gap: 16,
+    flexDirection: "column",
 
-    paddingTop: 54,
-    paddingBottom: 54,
-    paddingLeft: HEADER_HORIZONTAL_PADDING,
-    paddingRight: HEADER_HORIZONTAL_PADDING,
+    backgroundSize: "cover",
+    backgroundPosition: "center",
 
-    ...($menuIsOpen && {
-      backgroundColor: "#15151F",
-    }),
+    height: "100%",
+    boxSizing: "border-box",
+
+    minWidth: 1280, // TODO - Make it responsive later
+
+    ...($menuIsOpen
+      ? {
+          backgroundImage: backgroundImages[$backgroundImage],
+          backgroundColor: "rgba(21, 21, 31, 1)",
+          backgroundBlendMode: "overlay",
+        }
+      : { backgroundImage: backgroundImages[$backgroundImage] }),
   }),
 );
+
+export const Header = styled("div")(({ theme }) => ({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  gap: 16,
+
+  paddingTop: 54,
+  paddingLeft: HEADER_HORIZONTAL_PADDING,
+  paddingRight: HEADER_HORIZONTAL_PADDING,
+}));
 
 // Logo container styles
 

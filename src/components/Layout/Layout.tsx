@@ -1,5 +1,6 @@
 import { PropsWithChildren, useState } from "react";
 import {
+  BackgroundImageType,
   Header,
   HorseContainer,
   LogoContainer,
@@ -14,13 +15,13 @@ import { MenuIcon } from "./assets/MenuIcon";
 import { CloseIcon } from "./assets/CloseIcon";
 import { Menu } from "./components/Menu/Menu";
 
-type LayoutProps = PropsWithChildren<{}>;
-export const Layout = ({ children }: LayoutProps) => {
+type LayoutProps = PropsWithChildren<{ source?: BackgroundImageType }>;
+export const Layout = ({ children, source }: LayoutProps) => {
   const [menuIsOpen, setMenuIsOpen] = useState(false);
 
   return (
-    <Root $menuIsOpen={menuIsOpen}>
-      <Header $menuIsOpen={menuIsOpen}>
+    <Root $menuIsOpen={menuIsOpen} $backgroundImage={source || "general"}>
+      <Header>
         <LogoContainer>
           <LogoText>SEIGI</LogoText>
         </LogoContainer>

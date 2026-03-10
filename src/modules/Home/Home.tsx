@@ -3,7 +3,7 @@ import { Layout } from "../../components/Layout/Layout";
 
 export const Home = () => {
   return (
-    <Layout>
+    <Layout source="home">
       <Box
         display="flex"
         justifyContent="center"

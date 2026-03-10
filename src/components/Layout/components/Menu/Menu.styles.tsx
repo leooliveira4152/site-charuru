@@ -2,9 +2,13 @@ import { styled, Typography } from "@mui/material";
 import { HEADER_HORIZONTAL_PADDING } from "../../Layout.styles";
 
 export const Root = styled("div")({
+  // Forcing the menu to be on the center of the screen
+  position: "absolute",
+  top: "50%",
+  transform: "translateY(-50%)",
+
   display: "flex",
   flexDirection: "column",
-  paddingBottom: 54,
   paddingLeft: HEADER_HORIZONTAL_PADDING,
 });
 
@@ -12,16 +16,16 @@ export const MenuItem = styled("div")(() => ({
   display: "flex",
   flexDirection: "row",
   alignItems: "center",
-  gap: 56,
+  gap: 40,
   ":hover": { cursor: "pointer" },
 }));
 
 type MenuTextProps = { $isHovered: boolean };
 export const MenuText = styled(Typography)<MenuTextProps>(({ $isHovered }) => ({
   fontFamily: "Queering",
-  fontSize: 130,
-  lineHeight: "105px", // More arbitrary values to match design
-  letterSpacing: 3,
+  fontWeight: 700,
+  fontSize: 96,
+  lineHeight: "100%",
   width: "fit-content",
   transformOrigin: "left",
 
