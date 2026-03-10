@@ -23,12 +23,9 @@ export const MenuText = styled(Typography)<MenuTextProps>(({ $isHovered }) => ({
   lineHeight: "105px", // More arbitrary values to match design
   letterSpacing: 3,
   width: "fit-content",
-  WebkitTextStroke: "5px #fff",
   transformOrigin: "left",
-  paddingTop: 14,
 
   ...($isHovered && {
     color: "#F23700", // TODO - Place in a common file
-    WebkitTextStroke: "7px #F23700",
   }),
 }));

@@ -79,7 +79,6 @@ export const LogoText = styled("div")({
   fontWeight: 700,
   lineHeight: "normal",
   fontSize: 40,
-  marginTop: 3,
   letterSpacing: 1,
 });
 
@@ -103,14 +102,12 @@ export const TitleContainer = styled("div")(({ theme }) => ({
   display: "flex",
 }));
 
-const TITLE_PADDING_TOP = 9;
 export const Title = styled(Typography)(({ theme }) => ({
   fontFamily: "Queering",
   fontWeight: 700,
   fontSize: 80,
-  lineHeight: HEADER_CONTENT_HEIGHT - TITLE_PADDING_TOP + "px",
+  lineHeight: HEADER_CONTENT_HEIGHT + "px",
   color: "#FFFFFF",
-  paddingTop: TITLE_PADDING_TOP,
 }));
 
 // Menu button styles

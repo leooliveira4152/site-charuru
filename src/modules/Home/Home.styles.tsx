@@ -38,8 +38,6 @@ export const TitleText = styled(Typography)({
   fontWeight: 700,
   lineHeight: "normal",
   fontSize: 90,
-  paddingTop: 6,
-  WebkitTextStroke: "1px #fff",
 });
 
 export const FooterContainer = styled("div")({
